@@ -27,20 +27,14 @@ Once you are done with Application registration, you will get Client Id which is
 Returns the specified dataset from the specified workspace. 
 GET URL:-https://api.powerbi.com/v1.0/myorg/groups/{groupId}/datasets/{datasetId}
 
-Power Shell Code for Get Dataset in Group
-
-
-
+[Power Shell Code for Get Dataset in Group](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/GetDatasetInGroup.ps1)
 
 #### 3.2 Delete Dataset in Group 
 
 Deletes the specified dataset from "My Workspace".
 Delete URL:-https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}
 
-Power Shell Code for Delete Dataset
-
-
-
+[Power Shell Code for Delete Dataset](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/Delete_Dataset.ps1)
 
 #### 3.3 Dataset Refresh  
 
@@ -51,9 +45,7 @@ In Premium capacities this call is not limited in number of times per day, but o
 
 Post URL- https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/refreshes
 
-Power Shell Code for Refresh the dataset
-
-
+[Power Shell Code for Refresh the dataset](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/Dataset_Refresh.ps1)
 
 
 #### 3.4 Update Dataset Parameter 
@@ -65,10 +57,7 @@ Important: The dataset must be refreshed for new parameters values to be applied
 Post URL
 https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/Default.UpdateParameters
 
-Power Shell Code For update dataset parameter
-
-
-
+[Power Shell Code For update dataset parameter](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/Update_Parameter.ps1)
 
 
 #### 3.5 Get Direct Query Refresh Schedule in Group  
@@ -78,11 +67,7 @@ Returns the refresh schedule of a specified DirectQuery or LiveConnection datase
 GET URL
 https://api.powerbi.com/v1.0/myorg/groups/{groupId}/datasets/{datasetId}/directQueryRefreshSchedule
 
-Power Shell Code for Get Direct Query Refresh Schedule
-
-
-
-
+[Power Shell Code for Get Direct Query Refresh Schedule](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/DirectQueryDatasetRefrsh.ps1)
 
 #### 3.6 Get Parameters  
 
@@ -91,9 +76,7 @@ Returns a list of parameters for the specified dataset from "My Workspace".
 GET URL
 https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/parameters
 
-Power Shell Code for Get parameter
-
-
+[Power Shell Code for Get parameter](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/GetParameter.ps1)
 
 
 #### 3.7 Get Refresh History  
@@ -106,8 +89,7 @@ https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/refreshes
 Optional Parameter
 https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/refreshes?$top={$top}
 
-Power Shell Code to Get Refresh History
-
+[Power Shell Code to Get Refresh History](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/RefreshHistory.ps1)
 
 
 #### 3.8 Update Refresh Schedule in Group  
@@ -121,8 +103,7 @@ The days array should not be set to empty array.
 Patch URL
 https://api.powerbi.com/v1.0/myorg/groups/{groupId}/datasets/{datasetId}/refreshSchedule
 
-Power Shell Code for update Refresh Schedule.
-
+[Power Shell Code for update Refresh Schedule](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/UpdateRefrshSchedule.ps1)
 
 
 #### 3.9 Bind to Gateway  
@@ -132,9 +113,7 @@ Binds the specified dataset from "My Workspace" to the specified gateway with (o
 Post URL
 https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/Default.BindToGateway
 
-Power Shell Code for bind to Gateway
-
-
+[Power Shell Code for bind to Gateway](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/BindGateway.ps1)
 
 
 # 4. Group/Worspace Operations using PowerShell
@@ -146,8 +125,7 @@ Creates new workspace.
 Post URL
 https://api.powerbi.com/v1.0/myorg/groups
 
-Power Shell Code for Create workspace
-
+[Power Shell Code for Create workspace](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/CreateWorkspace.ps1)
 
 
 #### 4.2 Add New User to Workspace   
@@ -159,8 +137,7 @@ Notes: Users that have been recently added to a group may not have their new gro
 Post URL
 https://api.powerbi.com/v1.0/myorg/groups/{groupId}/users
 
-Power Shell Code to Add user to Workspace
-
+[Power Shell Code to Add user to Workspace](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/groupuser.ps1)
 
 
 #### 4.3 Copy Workspace  
@@ -169,8 +146,7 @@ There is no direct API for copy workspace we have integrate combinations of API 
 
 Following code copy all the content of workspace to another workspace like report, dataset.
 
-Power Shell Code For copy workspace
-
+[Power Shell Code For copy workspace](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/CopyWorkspace.ps1)
 
 
 #### 4.4 Delete Group  
@@ -180,8 +156,7 @@ Deletes the specified workspace.
 URL
 https://api.powerbi.com/v1.0/myorg/groups/{groupId}
 
-Power Shell Code for Delete workspace
-
+[Power Shell Code for Delete workspace](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/DeleteWorkspace.ps1)
 
 
 #### 4.5 Delete User from Group  
@@ -191,9 +166,7 @@ Deletes the specified user permissions from the specified workspace.
 URL
 https://api.powerbi.com/v1.0/myorg/groups/{groupId}/users/{user}
 
-Power Shell code for Delete User from Workspace
-
-
+[Power Shell code for Delete User from Workspace](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/DeleteUserInWorkspace.ps1)
 
 
 #### 4.6 Get Group Users  
@@ -202,8 +175,7 @@ Returns a list of users that have access to the specified workspace.
 
 URL: https://api.powerbi.com/v1.0/myorg/groups/{groupId}/users
 
-Power Shell Code for Get Users in Workspace
-
+[Power Shell Code for Get Users in Workspac](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/groupuser.ps1)
 
 
 #### 4.7 Get Groups  
@@ -216,25 +188,12 @@ You can also use filter in URL like below
 
 https://api.powerbi.com/v1.0/myorg/groups?$filter=$filter=contains(name,'marketing')%20or%20name%20eq%20'contoso'
 
-Power Shell code for Delete User in Workspace
-
+[Power Shell code for get groups](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/GetGroups.ps1)
 
 
 # 5. Reports Operations using PowerShell
 
-#### 5.1 Clone/Copy Report  
-
-Clones the specified report from"My Workspace".
-If after cloning the report and its dataset reside in two different upgraded workspace or "My Workspace", a shared dataset will be created in the report's workspace.
-Reports with live connection will lose the live connection when cloning, and will have a direct binding to the target dataset.
-
-URL: https://api.powerbi.com/v1.0/myorg/groups/{groupId}/users/{user}
-
-Power Shell Code for Clone the report
-
-
-
-#### 5.2 Delete Report  
+#### 5.1 Delete Report  
 
 Returns a list of workspaces the user has access to.
 
@@ -244,45 +203,27 @@ You can also use filter in URL like below
 
 https://api.powerbi.com/v1.0/myorg/groups?$filter=$filter=contains(name,'marketing')%20or%20name%20eq%20'contoso'
 
-Power Shell code for Delete User in Workspace
+[Power Shell code for Delete report in Workspace](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/DeleteReport.ps1)
 
 
-
-#### 5.3 Export Report  
-
-Exports the specified report from "My Workspace" to a .pbix file. File will be exported in ZIP format.
-
-Limitation:
-Export of a report with Power BI service live connection after calling rebind report is not supported.
-
-GET URL: https://api.powerbi.com/v1.0/myorg/reports/{reportId}/Export
-
-Power Shell Code for Export the report
-
-
-
-#### 5.4 Get Data sources In Group  
+#### 5.2 Get Data sources In Group  
 
 Returns a list of data sources for the specified RDL report from the specified workspace.
 
 GET URL: https://api.powerbi.com/v1.0/myorg/groups/{groupId}/reports/{reportId}/datasources
 
-Power Shell Code to Get Data sources the Group
+[Power Shell Code to Get Data sources the Group](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/GetDatasources.ps1)
 
-
-
-#### 5.5 Get Report in Group  
+#### 5.3 Get Report in Group  
 
 Returns the specified report from the specified workspace.
 
 GET URL : https://api.powerbi.com/v1.0/myorg/groups/{groupId}/reports/{reportId}
 
-Power Shell Code for Get Report in Group
+[Power Shell Code for Get Report in Group](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/GetReportInGroup.ps1)
 
 
-
-
-#### 5.6 Rebind Report  
+#### 5.4 Rebind Report  
 
 Rebinds the specified report from the specified workspace to the requested dataset 
 Reports with live connection will lose the live connection when rebinding, and will have direct 
@@ -291,19 +232,17 @@ binding to the target dataset.
 GET URL: https://api.powerbi.com/v1.0/myorg/groups/{groupId}/reports/{reportId}/
 Rebind
 
-Power Shell Code for Rebind the Report
+[Power Shell Code for Rebind the Report](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/Rebind.ps1)
 
 
-
-#### 5.7 Update Data sources  
+#### 5.5 Update Data sources  
 
 Updates the data sources of the specified paginated report from the specified workspace. 
 Important: The original data source and the new data source must have the exact same schema.
 
 POST URL: https://api.powerbi.com/v1.0/myorg/groups/{groupId}/reports/{reportId}/Default.UpdateDatasources
 
-Power Shell Code to Update Data source
-
+[Power Shell Code to Update Data source](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/UpdateDatasource.ps1)
 
 
 # 6. Gateway Operations using PowerShell
@@ -314,10 +253,9 @@ Creates a new data source on the specified gateway.
 
 POST URL: https://api.powerbi.com/v1.0/myorg/gateways/{gatewayId}/datasources
 
-Power Shell Code to Create Data source
+[Power Shell Code to Create Data source](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/CreateDatasource.ps1)
 
 
-	
 #### 6.2 Delete Data source  
 
 Deletes the specified data source from the specified gateway
@@ -325,7 +263,7 @@ Deletes the specified data source from the specified gateway
 POST URL: 
 https://api.powerbi.com/v1.0/myorg/gateways/{gatewayId}/datasources/{datasourceId}
 
-Power Shell Code to Delete Data source
+[Power Shell Code to Delete Data source](https://github.com/nitor-infotech-oss/Power_BI_operations_Powershell/blob/main/DeleteDatasource.ps1)
 
 
 
